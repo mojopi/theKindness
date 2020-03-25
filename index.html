@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title></title>
+    <style type="text/css">
+    section {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: cover;
+
+
+    }
+
+    #section1 {
+        position: fixed;
+
+    }
+
+    #section2 {
+        top: 100%;
+    }
+
+    #section3 {
+        top: 150%;
+    }
+
+
+
+    .image {
+        /*        border: 1px solid black;
+*/
+        width: 50%;
+        left: 0%;
+        height: 100%;
+        position: absolute;
+        background-size: cover;
+
+    }
+
+
+
+    #image1 {
+        top: 0%;
+        background-image: url(section1.png);
+    }
+
+    #image2 {
+        background-image: url(section2.png);
+    }
+
+    #image3 {
+        background-image: url(section3.png);
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /*.fixed {
+        position: fixed;
+    }*/
+
+    .text {
+        font-family: 'Abril Fatface', cursive;
+        width: 45%;
+        height: 100%;
+        left: 50%;
+        /*        border: black 1px solid;
+*/
+        font-size: 1.6vw;
+        padding: 10px;
+        position: inherit;
+
+
+    }
+
+    /*.boxes {
+/*        border: solid 1px black;        position: absolute;
+        width: 80%;
+        left: 10%;
+        font-size: 2vw;
+        font-family: courier;
+        padding:5px;
+    }*/
+    </style>
+</head>
+
+<body>
+    <section id="section1">
+        <div id="image1" class="image"></div>
+        </div>
+        <div class="text">
+            <br>
+            
+            <span style="font-size:5vw;">The Kindness</span>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="image" id="image2"></div>
+        <div class="text">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            New York is as busy as busy can be<br>
+            Fast-walking, fast-talking, a bustling city.
+        </div>
+    </section>
+    <section id="section3">
+        <div class="image" id="image3"></div>
+        <div class="text">
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            Tunnels through the underground<br>
+                Humming with music and loud squeaking sounds.<br><br>
+                Numbered, lettered trains pull into the stations,<br>
+                Riders await with great hesitation.<br><br>
+                Rushing to work and rushing to shows,<br>
+                they’re rushing to eat, mingle, get some new clothes.<br><br>
+                They’re rushing through skyscrapers and through street theater,<br>
+                Through museums, landmarks, phone-talkers, and readers.
+        </div>
+    </section>
+    <script type="text/javascript">
+    var section2 = document.getElementById('section2'); 
+    var section3 = document.getElementById('section3');
+
+    // var section1 = document.getElementById('section1')
+
+    // var box1 = document.getElementById("box1");
+    // function parseTextBox(x){
+    // 	var stringNum = x.slice(3);
+    // 	var num = parseInt(stringNum);
+    // 	console.log(num);
+    // 	document.getElementById(x).style.top = "100%" ;
+
+    // }
+
+    // parseTextBox("box1");
+
+
+    // document.addEventListener("scroll",
+    //            function() {
+    //            	console.log(section1.getBoundingClientRect().y)
+    // if (section1.getBoundingClientRect().y<15) {
+    // section1.classList.add("fixed")}});
+
+
+    // document.addEventListener("scroll",
+    //         function() {
+    //         	console.log(section2.getBoundingClientRect().y/100);
+    //                 section1.style.opacity = section2.getBoundingClientRect().y/100;
+    //                 section2.style.opacity = section2.getBoundingClientRect().y/100;;
+    //             });
+
+
+    document.addEventListener("scroll", function() {
+        console.log(
+            section2.getBoundingClientRect().y);
+        var top1 = section2.getBoundingClientRect().y;
+        if (top1 < 20) {
+            section2.style.top = "0%";
+            section2.style.position = "fixed";
+        }
+
+        var top2 = section3.getBoundingClientRect().y;
+        if (top2 < 50) {
+            section3.style.top = "0%";
+            section3.style.position = "fixed";
+        }
+
+
+
+
+    })
+    </script>
+</body>
+
+</html>
