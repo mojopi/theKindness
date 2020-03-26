@@ -85,6 +85,44 @@
     }
 
 
+    #section10 {
+        z-index: 5;
+        top: 900%;
+
+
+    }
+
+    #section11 {
+        z-index: 6;
+        background-color: white;
+        top: 1000%;
+
+
+    }
+
+    #section12 {
+        z-index: 7;
+        top: 1100%;
+
+
+    }
+
+    #text12 {
+        height: 70%;
+        top: 30%;
+
+
+    }
+
+    #text10 {
+        height: 70%;
+        top: 30%;
+
+
+    }
+
+
+
 
     .image {
         /*        border: 1px solid black;
@@ -119,8 +157,8 @@
         background-image: url(section7.png);
     }
 
-     #image9 {
-        
+    #image9 {
+
         background-image: url(section9.png);
     }
 
@@ -168,7 +206,7 @@
         </div>
         <div class="text">
             <br>
-            <span style="font-size:5vw;">The Kindness</span>
+            <span style="font-size:5vw;">The Kindness</span><br>
         </div>
     </section>
     <section class="page0" id="section2">
@@ -274,6 +312,37 @@
             A small voice responded, “Don’t mope, just get going!<br>
         </div>
     </section>
+    <section id="section10">
+        <div class="image" id="image10"></div>
+        <div id="text10" class="text">
+            Stop this now, don’t be down for the count!
+            You’re alive and can do things without going out!”
+            Cyan thought and thought of what she could do.
+        </div>
+    </section>
+    <section id="section11">
+        <div class="image"></div>
+        <div id="text11" class="text">
+        As she thought, she fiddled and then she drew<br>
+        She folded her paper into long accordions<br><br>
+        She cut paper snowflakes, drew foxes, and penguins.<br>
+        Finally, a thought began to grow<br>
+        She’d make a message to send down below<br><br>
+        </div>
+    </section>
+    <section id="section12">
+        <div class="image"></div>
+        <div id="text12" class="text">
+        She dug through her closet and thought what to use<br>
+        A bottle? a racket? Perhaps an old shoe? <br><br>
+        She futzed with the snowflakes she’d earlier made<br>
+        She hoed and hummed and paced and swayed<br><br>
+        “Paper!” she thought with a feeling of triumph.<br>
+        A plane could carry her message quite high up.<br><br>
+        When it would land, it’d land softly somewhere <br>
+        For someone to see it and feel joy and care.
+        </div>
+    </section>
     <script type="text/javascript">
     var section2 = document.getElementById('section2');
     var section3 = document.getElementById('section3');
@@ -334,6 +403,24 @@
             section9.style.position = "fixed";
         }
 
+
+        var top10 = section10.getBoundingClientRect().y;
+        if (top10 < 20) {
+            section10.style.top = "0%";
+            section10.style.position = "fixed";
+        }
+
+        var top11 = section11.getBoundingClientRect().y;
+        if (top11 < 20) {
+            section11.style.top = "0%";
+            section11.style.position = "fixed";
+        }
+
+         var top12 = section12.getBoundingClientRect().y;
+        if (top12 < 20) {
+            section12.style.top = "0%";
+            section12.style.position = "fixed";
+        }
 
 
     })
