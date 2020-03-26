@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <!-- things to add to the code:
+        1. write a function for the absolute to fixed piece where there's a variable that keeps track of the current section position (absolute or fixed and then is switching it when it gets above a certain value). 
+        2. Change all the <br> to tops of different percentages
+        3.  -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <title></title>
     <style type="text/css">
@@ -56,14 +60,28 @@
 
     #section6 {
         z-index: 3;
-        background-color:white;
-        color:black;
+        background-color: white;
+        color: black;
         top: 500%;
     }
 
- #section7 {
+    #section7 {
         z-index: 4;
         top: 600%;
+    }
+
+    #section8 {
+        z-index: 4;
+        top: 700%;
+        background-color: white;
+    }
+
+    #section9 {
+        z-index: 4;
+        top: 800%;
+        background-color: white;
+
+
     }
 
 
@@ -96,9 +114,14 @@
     }
 
     #image7 {
-        height:70%;
-        top:30%;
+        height: 70%;
+        top: 30%;
         background-image: url(section7.png);
+    }
+
+     #image9 {
+        
+        background-image: url(section9.png);
     }
 
     body {
@@ -123,9 +146,9 @@
 
     }
 
-    #text7{
-        top:5%;
-        height:5%;
+    #text7 {
+        top: 5%;
+        height: 5%;
     }
 
     /*.boxes {
@@ -203,7 +226,7 @@
     </section>
     <section id="section6">
         <div class="image" id="image6"></div>
-        <div  class="text">
+        <div class="text">
             <br><br>
             A virus evolved that filled people with dread<br>
             It was very contagious, the doctors said.<br><br>
@@ -211,73 +234,110 @@
             no fevers nor coughs, asymptomatic<br>
         </div>
     </section>
-            <section id="section7">
-                <div class="image" id="image7"></div>
-                <div  id="text7"class="text">
-                    <br><br><br><br><br><br><br><br>
-                    But when this small virus got inside the grown-ups<br>
-                    It hurt their lungs badly, so New York said “close up!”<br><br>
-                    To keep themselves safe, people distanced themselves<br>
-                    To have food at home, they stocked their shelves<br><br>
-                    They closed the schools and the shopping<br>
-                    They said keep clean with soapy handwashing<br><br>
-                    This virus was tiny, ‘twas invisible<br>
-                    And it closed down a city that was invincible
-                </div>
-            </section>
-            <script type="text/javascript">
-            var section2 = document.getElementById('section2');
-            var section3 = document.getElementById('section3');
+    <section id="section7">
+        <div class="image" id="image7"></div>
+        <div id="text7" class="text">
+            <br><br><br><br><br><br><br><br>
+            But when this small virus got inside the grown-ups<br>
+            It hurt their lungs badly, so New York said “close up!”<br><br>
+            To keep themselves safe, people distanced themselves.<br>
+            To have food at home, they stocked their shelves.<br><br>
+            They closed the schools and the shopping.<br>
+            They said "Keep clean with soapy handwashing!"<br><br>
+            This virus was tiny, ‘twas invisible<br>
+            And it closed down a city that was invincible.
+        </div>
+    </section>
+    <section id="section8">
+        <div class="image"></div>
+        <div class="text">
+            But in a small building; in three small rooms<br>
+            Was a child, Cyan, and her mom, on “zoom.”<br><br>
+            The mom worked from home, videoing all day long
+            Cyan, home from school, was singing a song.<br><br>
+            “Shhhh!” her mom hushed, “Can’t you see that I’m working!?”<br><br>
+            Cyan was annoyed, stress was constantly lurking.<br><br>
+            “Pillow fight?!” she requested. “I’m busy,” mom said,<br>
+            “Cyan, clean your room,” she suggested instead.<br><br>
+            “What about cookies?!” Cyan skipped about.<br>
+            Over her screen, mom frowned with a pout.<br><br>
+            She got the message: Cyan, go away!<br>
+        </div>
+    </section>
+    <section id="section9">
+        <div class="image" id="image9"></div>
+        <div class="text">
+            So she went by herself to her room to play.<br><br>
+            She flopped on her bed, feeling all alone.<br>
+            She missed her friends, and not being home.<br><br>
+            Moping, she whispered, “This new life is boring.”<br>
+            A small voice responded, “Don’t mope, just get going!<br>
+        </div>
+    </section>
+    <script type="text/javascript">
+    var section2 = document.getElementById('section2');
+    var section3 = document.getElementById('section3');
 
-            var section4 = document.getElementById('section4');
-            var section5 = document.getElementById('section5');
-
-       
-            document.addEventListener("scroll", function() {
-                console.log(
-                    section2.getBoundingClientRect().y);
-                var top1 = section2.getBoundingClientRect().y;
-                if (top1 < 20) {
-                    section2.style.top = "0%";
-                    section2.style.position = "fixed";
-                }
-
-                var top3 = section3.getBoundingClientRect().y;
-                if (top3 < 20) {
-                    section3.style.top = "0%";
-                    section3.style.position = "fixed";
-                }
-
-                var top4 = section4.getBoundingClientRect().y;
-                if (top4 < 20) {
-                    section4.style.top = "0%";
-                    section4.style.position = "fixed";
-                }
-
-
-                var top5 = section5.getBoundingClientRect().y;
-                if (top5 < 20) {
-                    section5.style.top = "0%";
-                    section5.style.position = "fixed";
-                }
-
-                var top6 = section6.getBoundingClientRect().y;
-                if (top6 < 20) {
-                    section6.style.top = "0%";
-                    section6.style.position = "fixed";
-                }
-
-                var top7 = section7.getBoundingClientRect().y;
-                if (top7 < 20) {
-                    section7.style.top = "0%";
-                    section7.style.position = "fixed";
-                }
+    var section4 = document.getElementById('section4');
+    var section5 = document.getElementById('section5');
 
 
+    document.addEventListener("scroll", function() {
+        console.log(
+            section2.getBoundingClientRect().y);
+        var top1 = section2.getBoundingClientRect().y;
+        if (top1 < 20) {
+            section2.style.top = "0%";
+            section2.style.position = "fixed";
+        }
+
+        var top3 = section3.getBoundingClientRect().y;
+        if (top3 < 20) {
+            section3.style.top = "0%";
+            section3.style.position = "fixed";
+        }
+
+        var top4 = section4.getBoundingClientRect().y;
+        if (top4 < 20) {
+            section4.style.top = "0%";
+            section4.style.position = "fixed";
+        }
 
 
-            })
-            </script>
+        var top5 = section5.getBoundingClientRect().y;
+        if (top5 < 20) {
+            section5.style.top = "0%";
+            section5.style.position = "fixed";
+        }
+
+        var top6 = section6.getBoundingClientRect().y;
+        if (top6 < 20) {
+            section6.style.top = "0%";
+            section6.style.position = "fixed";
+        }
+
+        var top7 = section7.getBoundingClientRect().y;
+        if (top7 < 20) {
+            section7.style.top = "0%";
+            section7.style.position = "fixed";
+        }
+
+        var top8 = section8.getBoundingClientRect().y;
+        if (top8 < 20) {
+            section8.style.top = "0%";
+            section8.style.position = "fixed";
+        }
+
+        var top9 = section9.getBoundingClientRect().y;
+        if (top9 < 20) {
+            section9.style.top = "0%";
+            section9.style.position = "fixed";
+        }
+
+
+
+    })
+    </script>
 </body>
 
 </html>
