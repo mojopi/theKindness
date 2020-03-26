@@ -14,9 +14,17 @@
 
     }
 
-    .page0{
-        z-index:0;
+    .page1 {
+        z-index: 0;
     }
+
+
+
+   /* #section6 {
+        z-index: 2;
+        
+        
+    }*/
 
     #section1 {
         position: fixed;
@@ -28,9 +36,23 @@
     }
 
     #section3 {
-        top: 150%;
+        top: 200%;
     }
 
+
+#section4 {
+        top: 300%;
+        z-index: 1;
+        background-color: white;
+
+    }
+
+    #section5 {
+        z-index: 2;
+        background-color:black;
+        color:white;
+        top: 400%;
+    }
 
 
     .image {
@@ -98,7 +120,6 @@
         </div>
         <div class="text">
             <br>
-            
             <span style="font-size:5vw;">The Kindness</span>
         </div>
     </section>
@@ -110,46 +131,90 @@
             <br>
             <br>
             <br>
-            
             New York is as busy as busy can be<br>
             Fast-walking, fast-talking, a bustling city.
         </div>
     </section>
-    <section class="page0" id="section3">
+    <section class="page1" id="section3">
         <div class="image" id="image3"></div>
         <div class="text">
             <br>
             <br>
             <br>
-            
             <br>
             <br>
             <br>
             <br>
             <br>
-            
             The veins of the city lie underground<br>
             Humming with music and loud squeaking sounds.<br><br>
-                Subway trains pull into the stations,<br>
-                Riders await with great hesitation.<br><br>
-                Rushing to work and rushing to shows,<br>
-                they’re rushing to eat, mingle, get some new clothes.<br><br>
-                They’re rushing through skyscrapers and street theater,<br>
-                Through museums, landmarks, phone-talkers, and readers.
+            Subway trains pull into the stations.<br>
+            Riders await with great hesitation.<br><br>
+            Rushing to work and rushing to shows,<br>
+            they’re rushing to eat, mingle, get some new clothes.<br><br>
+            They’re rushing through skyscrapers and street theater,<br>
+            Through museums, landmarks, phone-talkers, and readers.
         </div>
     </section>
+    <section id = "section4" class="page2">
+        <div class="image" id="image4"></div>
+        <div style="font-size:3vw"class="text">
+            <br>
+            <br>
+            <br>
+            <br>
+            New York is the city that never sleeps<br><br>
+            
+           
+        </div>
+    </section>
+
+      <section id ="section5" class="page2">
+        <div class="image" id="image5"></div>
+        <div style="font-size:3vw" class="text">
+            <br>
+            <br>
+            <br>
+            <br>
+            But it went to bed, silent. There was not a peep.
+            
+           
+        </div>
+    </section>
+
+  
+    <!-- <section id = "section6" class="page4">
+        <div class="image" id="image4"></div>
+        <div class="text">
+            A virus evolved that filled people with dread
+            It was very contagious, the doctors said.
+            Unlike adults, children didn’t get sick
+            No fevers nor coughs, asymptomatic
+            But when this small virus got inside the grown-ups
+            It hurt their lungs badly, so New York said “close up!”
+            To keep themselves safe, people distanced themselves
+            To have food at home, they stocked their shelves
+            They closed the schools and the shopping
+            They said keep clean with soapy handwashing
+            This virus was tiny, ‘twas invisible
+            And it closed down a city that was invincible
+        </div>
+    </section> -->
     <script type="text/javascript">
-    var section2 = document.getElementById('section2'); 
+    var section2 = document.getElementById('section2');
     var section3 = document.getElementById('section3');
+
+    var section4 = document.getElementById('section4');
+    var section5 = document.getElementById('section5');
 
     // var section1 = document.getElementById('section1')
 
     // var box1 = document.getElementById("box1");
     // function parseTextBox(x){
-    // 	var stringNum = x.slice(3);
-    // 	var num = parseInt(stringNum);
-    // 	console.log(num);
-    // 	document.getElementById(x).style.top = "100%" ;
+    //  var stringNum = x.slice(3);
+    //  var num = parseInt(stringNum);
+    //  console.log(num);
+    //  document.getElementById(x).style.top = "100%" ;
 
     // }
 
@@ -158,14 +223,14 @@
 
     // document.addEventListener("scroll",
     //            function() {
-    //            	console.log(section1.getBoundingClientRect().y)
+    //              console.log(section1.getBoundingClientRect().y)
     // if (section1.getBoundingClientRect().y<15) {
     // section1.classList.add("fixed")}});
 
 
     // document.addEventListener("scroll",
     //         function() {
-    //         	console.log(section2.getBoundingClientRect().y/100);
+    //          console.log(section2.getBoundingClientRect().y/100);
     //                 section1.style.opacity = section2.getBoundingClientRect().y/100;
     //                 section2.style.opacity = section2.getBoundingClientRect().y/100;;
     //             });
@@ -180,10 +245,23 @@
             section2.style.position = "fixed";
         }
 
-        var top2 = section3.getBoundingClientRect().y;
-        if (top2 < 50) {
+        var top3 = section3.getBoundingClientRect().y;
+        if (top3 < 20) {
             section3.style.top = "0%";
             section3.style.position = "fixed";
+        }
+
+         var top4 = section4.getBoundingClientRect().y;
+        if (top4 < 20) {
+            section4.style.top = "0%";
+            section4.style.position = "fixed";
+        }
+
+
+  var top4 = section5.getBoundingClientRect().y;
+        if (top4 < 20) {
+            section5.style.top = "0%";
+            section5.style.position = "fixed";
         }
 
 
