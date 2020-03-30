@@ -2,14 +2,20 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Patrick+Hand&display=swap" rel="stylesheet">
     <!-- things to add to the code:
         1. write a function for the absolute to fixed piece where there's a variable that keeps track of the current section position (absolute or fixed and then is switching it when it gets above a certain value). 
         2. Change all the <br> to tops of different percentages
-        3.  -->
+        3. 
+
+        I could do a "back button." I could make an array that holds all of the position values OR a  -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <title></title>
     <style type="text/css">
     section {
+        font-family: 'Abril Fatface', cursive;
+
         width: 100%;
         height: 100%;
         position: absolute;
@@ -45,16 +51,32 @@
 
 
     #section4 {
+        background-image: url(city-busy.png);
         top: 300%;
         z-index: 1;
         background-color: white;
+        font-size: 2vw;
+        text-align: center;
+         font-family: 'Patrick Hand', cursive;
+
 
     }
 
+
+
+
     #section5 {
+         font-family: 'Patrick Hand', cursive;
+
+        padding-right: 5%;
+
+        font-size: 2vw;
+        text-align: center;
+
+
+        background-image: url(city-sleeps.png);
         z-index: 2;
-        background-color: black;
-        color: white;
+        color: black;
         top: 400%;
     }
 
@@ -65,56 +87,74 @@
         top: 500%;
     }
 
-    #section7 {
-        z-index: 4;
+    #section65 {
+        z-index: 3;
+        color: black;
         top: 600%;
     }
 
-    #section8 {
+    #section7 {
         z-index: 4;
-        top: 700%;
         background-color: white;
+        color: black;
+        top: 700%;
+    }
+
+
+    #section8 {
+        background-color: white;
+
+        z-index: 5;
+        top: 800%;
     }
 
     #section9 {
-        z-index: 4;
-        top: 800%;
+        z-index: 6;
+        top: 900%;
         background-color: white;
-
-
     }
-
 
     #section10 {
-        z-index: 5;
-        top: 900%;
-
-
-    }
-
-    #section11 {
-        z-index: 6;
         background-color: white;
+        z-index: 7;
         top: 1000%;
 
 
     }
 
-    #section12 {
-        z-index: 7;
+
+    #section11 {
+        z-index: 8;
         top: 1100%;
+        background-color: white;
+
 
 
     }
 
-    #text12 {
+    #section12 {
+        z-index: 9;
+        background-color: white;
+        top: 1200%;
+
+
+    }
+
+    #section13 {
+        z-index: 10;
+        top: 1300%;
+
+
+    }
+
+    #text13 {
         height: 70%;
         top: 30%;
 
 
     }
 
-    #text10 {
+    #text1 {
         height: 70%;
         top: 30%;
 
@@ -151,15 +191,33 @@
         background-image: url(section3.png);
     }
 
-    #image7 {
+    /*#image4{
+        background-image:url(city-busy.jpg)
+    }*/
+    #image5 {
+        background-image: url(city-sleeps.jpg)
+    }
+
+    #image6 {
+        height: 60%;
+        top: 10%;
+        background-image: url(patient-doctor.png);
+    }
+
+    #image8 {
         height: 70%;
         top: 30%;
-        background-image: url(section7.png);
+        background-image: url(section8.png);
     }
 
     #image9 {
 
-        background-image: url(section9.png);
+        background-image: url(mom-cyan1.jpg);
+    }
+
+    #image10 {
+
+        background-image: url(room.png);
     }
 
     body {
@@ -171,13 +229,18 @@
     }*/
 
     .text {
-        font-family: 'Abril Fatface', cursive;
+        /*        font-family: 'Covered By Your Grace', cursive;
+*/
+        /*        font-family: 'Abril Fatface', cursive;
+*/
+        font-family: 'Patrick Hand', cursive;
+
         width: 45%;
         height: 100%;
         left: 50%;
         /*        border: black 1px solid;
 */
-        font-size: 1.6vw;
+        font-size: 3vw;
         padding: 10px;
         position: inherit;
 
@@ -188,6 +251,9 @@
         top: 5%;
         height: 5%;
     }
+
+
+
 
     /*.boxes {
 /*        border: solid 1px black;        position: absolute;
@@ -206,7 +272,7 @@
         </div>
         <div class="text">
             <br>
-            <span style="font-size:5vw;">The Kindness</span><br>
+            <span style="font-family: 'Abril Fatface', cursive;font-size:6vw;">The Kindness</span><br>
         </div>
     </section>
     <section class="page0" id="section2">
@@ -243,24 +309,11 @@
         </div>
     </section>
     <section id="section4" class="page2">
-        <div class="image" id="image4"></div>
-        <div style="font-size:3vw" class="text">
-            <br>
-            <br>
-            <br>
-            <br>
-            New York is the city that never sleeps<br><br>
-        </div>
+        New York is the city that never sleeps<br><br>
     </section>
     <section id="section5" class="page2">
-        <div class="image" id="image5"></div>
-        <div style="font-size:3vw" class="text">
-            <br>
-            <br>
-            <br>
-            <br>
-            But it went to bed, silent. There was not a peep.
-        </div>
+        <br>
+        But it went to bed, silent. There was not a peep.
     </section>
     <section id="section6">
         <div class="image" id="image6"></div>
@@ -268,13 +321,32 @@
             <br><br>
             A virus evolved that filled people with dread<br>
             It was very contagious, the doctors said.<br><br>
+        </div>
+    </section>
+    <section id='section65'>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div style="left:40%; text-align:right;" class="text">
+            <br>
             Unlike adults, children didn’t get sick<br>
-            no fevers nor coughs, asymptomatic<br>
+            no fevers nor coughs, asymptomatic.<br>
+            <div class="image" style="
+            width:300px;height:300px; background-position:left;background-size:contain; background-image:url(cyan-kneeUp.png);">
+            </div>
         </div>
     </section>
     <section id="section7">
         <div class="image" id="image7"></div>
         <div id="text7" class="text">
+            <br><br><br><br><br><br><br><br>
+            But when this small virus got inside the grown-ups<br>
+            It hurt their lungs badly, so New York said “close up!”<br><br>
+        </div>
+    </section>
+    <section id="section8">
+        <div class="image" id="image8"></div>
+        <div id="text8" class="text">
             <br><br><br><br><br><br><br><br>
             But when this small virus got inside the grown-ups<br>
             It hurt their lungs badly, so New York said “close up!”<br><br>
@@ -286,8 +358,8 @@
             And it closed down a city that was invincible.
         </div>
     </section>
-    <section id="section8">
-        <div class="image"></div>
+    <section id="section9">
+        <div id="image9" class="image"></div>
         <div class="text">
             But in a small building; in three small rooms<br>
             Was a child, Cyan, and her mom, on “zoom.”<br><br>
@@ -302,8 +374,8 @@
             She got the message: Cyan, go away!<br>
         </div>
     </section>
-    <section id="section9">
-        <div class="image" id="image9"></div>
+    <section id="section10">
+        <div class="image" id="image10"></div>
         <div class="text">
             So she went by herself to her room to play.<br><br>
             She flopped on her bed, feeling all alone.<br>
@@ -312,38 +384,45 @@
             A small voice responded, “Don’t mope, just get going!<br>
         </div>
     </section>
-    <section id="section10">
-        <div class="image" id="image10"></div>
+    <section id="section11">
+        <div class="image" id="image11"></div>
         <div id="text10" class="text">
             Stop this now, don’t be down for the count!
             You’re alive and can do things without going out!”
             Cyan thought and thought of what she could do.
         </div>
     </section>
-    <section id="section11">
-        <div class="image"></div>
-        <div id="text11" class="text">
-        As she thought, she fiddled and then she drew<br>
-        She folded her paper into long accordions<br><br>
-        She cut paper snowflakes, drew foxes, and penguins.<br>
-        Finally, a thought began to grow<br>
-        She’d make a message to send down below<br><br>
-        </div>
-    </section>
     <section id="section12">
         <div class="image"></div>
         <div id="text12" class="text">
-        She dug through her closet and thought what to use<br>
-        A bottle? a racket? Perhaps an old shoe? <br><br>
-        She futzed with the snowflakes she’d earlier made<br>
-        She hoed and hummed and paced and swayed<br><br>
-        “Paper!” she thought with a feeling of triumph.<br>
-        A plane could carry her message quite high up.<br><br>
-        When it would land, it’d land softly somewhere <br>
-        For someone to see it and feel joy and care.
+            As she thought, she fiddled and then she drew<br>
+            She folded her paper into accordions<br><br>
+            She cut paper snowflakes, drew foxes, and penguins.<br>
+            Finally, a thought began to grow<br>
+            She’d make a message to send down below<br><br>
+        </div>
+    </section>
+    <section id="section13">
+        <div class="image"></div>
+        <div id="text13" class="text">
+            She dug through her closet and thought what to use<br>
+            A bottle? a racket? Perhaps an old shoe? <br><br>
+            She futzed with the snowflakes she’d earlier made<br>
+            She hoed and hummed and paced and swayed<br><br>
+            “Paper!” she thought with a feeling of triumph.<br>
+            A plane could carry her message quite high up.<br><br>
+            When it would land, it’d land softly somewhere <br>
+            For someone to see it and feel joy and care.
         </div>
     </section>
     <script type="text/javascript">
+    //I want to create a function that gets a section by it's, sets a variable (the "top" variables) to that id's getBoundingClientRect().y and says if it's less than 20, make the top 0% and sent the position to fixed. make a variable that's set to absolute and then fixed based on whatever section you're over
+
+    //
+
+    //then say, if window.
+
+
     var section2 = document.getElementById('section2');
     var section3 = document.getElementById('section3');
 
@@ -352,8 +431,7 @@
 
 
     document.addEventListener("scroll", function() {
-        console.log(
-            section2.getBoundingClientRect().y);
+        section2.getBoundingClientRect().y;
         var top1 = section2.getBoundingClientRect().y;
         if (top1 < 20) {
             section2.style.top = "0%";
@@ -383,6 +461,12 @@
         if (top6 < 20) {
             section6.style.top = "0%";
             section6.style.position = "fixed";
+        }
+
+        var top65 = section65.getBoundingClientRect().y;
+        if (top65 < 20) {
+            section65.style.top = "0%";
+            section65.style.position = "fixed";
         }
 
         var top7 = section7.getBoundingClientRect().y;
@@ -416,14 +500,27 @@
             section11.style.position = "fixed";
         }
 
-         var top12 = section12.getBoundingClientRect().y;
+        var top12 = section12.getBoundingClientRect().y;
         if (top12 < 20) {
             section12.style.top = "0%";
             section12.style.position = "fixed";
         }
 
 
-    })
+    });
+
+    // var sections = document.getElementsByTagName("section");
+
+    // for (var i = 0; i < sections.length; i++) {
+    //     sections[i].addEventListener("mousedown", function(event) { console.log(this);
+    //           if (this.style.position = "fixed") { this.style.position = "absolute";
+    //           this.style.top = this.getBoundingClientRect().y; };
+
+
+    //     })};
+
+
+    // console.log(this)
     </script>
 </body>
 
